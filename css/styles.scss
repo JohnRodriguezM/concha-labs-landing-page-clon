@@ -4,6 +4,7 @@ $color-borde:#4b6686; /*border input*/
 $color-testimonio1:#f89c7f; /*color parte de los testimonios*/
 $color-testimonio2:#faf3ec;/*color segundo testimonio*/
 $fuente-principal:'Nunito Sans', sans-serif;
+$color-h2:#E09900;
 /*text-shadow: 0 1px 3px rgb(0 0 0 / 30%) al h2 del banner;
 
 */
@@ -49,7 +50,6 @@ header{
 main{
     padding-top: 55px;
     .main_section1{
-        
         .main_section1-div1{
             background-image: url(../assets/imagenes/banner2.png);
             background-repeat: no-repeat;
@@ -98,7 +98,43 @@ main{
         .main_section1-div2:hover,.main_section1-div2:active{
             opacity: 1;
         }
+    }
+    .main_section2{
+        padding-top:35%;
+        .main_section2-div1{
+            display: grid;
+            grid-template-rows: auto auto auto;
+            text-align: center;
+            h2{
+                padding-left: 7%;
+                text-align: left;
+                color:$color-h2;
+                font-size: 1.25rem;
+                font-weight:900;
+            }
+            h3{
+                width:75%;
+                text-align: left;
+                padding-top: 12px;
+                padding-left:7%;
+                font-size:2.5rem;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight:400;
+                color: #333;
+            }
+            img{
+                width: 85%;
+                max-width:550px;
+            }
+            .main_section2-div1-p1,.main_section2-div1-p2{
+                width: 85%;
+                text-align: left;
+                padding-left:7%;
+                padding-bottom: 10px;
+                font-size:1.8rem;
 
+            }
+        }
     }
 }
 
