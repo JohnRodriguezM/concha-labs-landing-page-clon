@@ -35,12 +35,12 @@
     sr.reveal('.main_section5',{
         duration:3500,
         origin:'left',//quitar
-        distance:'-100px'//quitar
+        //distance:'-100px'//quitar
     });
     sr.reveal('.main_section6',{
         duration:3500,
         origin:'right',//quitar
-        distance:'-100px'//quitar
+        //distance:'-100px'//quitar
     });
     sr.reveal('#rotate',{
         duration:4000,
