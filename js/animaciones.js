@@ -34,12 +34,12 @@
     });
     sr.reveal('.main_section5',{
         duration:3500,
-        origin:'left',//quitar
+        //origin:'left',//quitar
         //distance:'-100px'//quitar
     });
     sr.reveal('.main_section6',{
         duration:3500,
-        origin:'right',//quitar
+        //origin:'right',//quitar
         //distance:'-100px'//quitar
     });
     sr.reveal('#rotate',{
