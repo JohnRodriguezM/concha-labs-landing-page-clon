@@ -110,7 +110,7 @@ main{
         padding-top:35%;
         .main_section2-div1{
             display: grid;
-            grid-template-rows: auto auto auto;
+            grid-template-rows: auto auto;
             text-align: center;
             h2{
                 padding-top:30px;
@@ -214,7 +214,8 @@ main{
         background-image:radial-gradient(circle at bottom left,#ffffff 0%,#c3e3e8 28%);
         margin-top:50px;
         .main_section4-div1{
-            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
             padding-top: 20px;
             padding-bottom: 25px;
             padding-left: 7%;
@@ -242,7 +243,8 @@ main{
         }
         .main_section4-div2{
             padding-bottom: 100px;
-            max-width:550px;
+            margin-left: auto;
+            margin-right: auto;
             form{
 
                 label{
@@ -487,21 +489,33 @@ footer{
             }
         }
     }
+    
     main .main_section1 .main_section1-div1, main .main_section1 .main_section1-div2{
         height:180px;
     }
-    .main_section2{
-        .main_section2-div1{
-            .div_interno1{
-                order:2;
+    main{
+        .main_section2{
+            .main_section2-div1{
+                .div_interno1{
+                    order:2;
+                }
+                .div_interno2{
+                    margin-top: 30px;
+                    order:1;
+                }
+                .div_interno3{
+                    padding-top: 10px;
+                    order:3;
+                }
             }
-            .div_interno2{
-                margin-top: 30px;
-                order:1;
-            }
-            .div_interno3{
-                padding-top: 10px;
-                order:3;
+        }
+        .main_section3{
+            .main_section3-interna  {
+                .main_section3-interna-div3{
+                    .img3{
+                        width:42%;
+                    }
+                }
             }
         }
     }
@@ -536,10 +550,10 @@ footer{
             height:210px;
         }
         .main_section3{
-            .main_section3-interna{
+            .main_section3-interna  {
                 .main_section3-interna-div3{
                     .img3{
-                        width:40%;
+                        width:38%;
                     }
                 }
             }
@@ -612,8 +626,25 @@ footer{
 
 
 @media(min-width:850px){
+    header{
+        .header_div2{
+            padding-left: 57%;
+        }
+    }
     main .main_section1 .main_section1-div1, main .main_section1 .main_section1-div2{
         height:270px;
+    }
+    main{
+        .main_section2{
+            .main_section2-div1{
+                .div_interno1{
+                    padding-left: 70px;
+                }
+            }
+            .div_interno3{
+                padding-left: 70px;
+            }
+        }
     }
 }
 
@@ -627,6 +658,54 @@ footer{
     }
     main .main_section1 .main_section1-div1, main .main_section1 .main_section1-div2{
         height:300px;
+    }
+    main{
+        .main_section2{
+            margin-top: 30px;
+            .main_section2-div1{
+                max-width:1000px;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 40% 10%;
+                margin-left: auto;
+                margin-right: auto;
+                .div_interno1{
+                    grid-column: 2/3;
+                    grid-row: 1/2;
+                }
+                .div_interno3{
+                    padding-top: 150px;
+                    grid-column: 2/3;
+                    grid-row: 1/2;
+                }
+            }
+        }
+        .main_section4{
+            background-color: $color1;
+            background-image: url(../assets/iconos/audifonos.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: 25%;
+            display:inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 75px;
+            padding-top:55px;
+            padding-bottom: 65px;
+            .main_section4-div1{
+                padding-left: 2%;
+                width:50%;
+            }
+            .main_section4-div2{
+                padding-bottom: 10px;
+            }
+        }
+        .main_section6{
+            grid-template-columns: 50% 50%;
+            max-width:1250px;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }
 
@@ -655,6 +734,30 @@ footer{
     }
     main .main_section1 .main_section1-div1, main .main_section1 .main_section1-div2{
         height:330px;
+    }
+    footer{
+        .footer-div1{
+            h2{
+                font-size:2.3rem;
+            }
+            #addres{
+                width:450px;
+            }
+            #suscribe{
+                width:110px;
+                padding:12px;
+                font-size: 1.3rem;
+
+            }
+        }
+        .footer-div3{
+            font-size:2rem;
+        }
+        .footer-div4{
+            img{
+                width: 45%;
+            }
+        }
     }
 }
 
@@ -705,11 +808,3 @@ footer{
 }
 
 
-
-@media(min-width:980px){
-    main .main_section2 .main_section2-div1{
-        display:inline-grid;
-        grid-template-columns: 35% 35%;
-        grid-template-rows: 50% 50%;
-    }
-}

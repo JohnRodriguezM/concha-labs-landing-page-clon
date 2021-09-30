@@ -124,8 +124,8 @@ main .main_section2 {
 main .main_section2 .main_section2-div1 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto auto auto;
-  grid-template-rows: auto auto auto;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
   text-align: center;
 }
 main .main_section2 .main_section2-div1 h2 {
@@ -234,7 +234,8 @@ main .main_section4 {
   margin-top: 50px;
 }
 main .main_section4 .main_section4-div1 {
-  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 20px;
   padding-bottom: 25px;
   padding-left: 7%;
@@ -261,7 +262,8 @@ main .main_section4 .main_section4-div1 .section_4-div1-p {
 }
 main .main_section4 .main_section4-div2 {
   padding-bottom: 100px;
-  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
 }
 main .main_section4 .main_section4-div2 form label input {
   display: block;
@@ -500,22 +502,25 @@ footer .footer-div4 p {
     height: 180px;
   }
 
-  .main_section2 .main_section2-div1 .div_interno1 {
+  main .main_section2 .main_section2-div1 .div_interno1 {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  .main_section2 .main_section2-div1 .div_interno2 {
+  main .main_section2 .main_section2-div1 .div_interno2 {
     margin-top: 30px;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
-  .main_section2 .main_section2-div1 .div_interno3 {
+  main .main_section2 .main_section2-div1 .div_interno3 {
     padding-top: 10px;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+  }
+  main .main_section3 .main_section3-interna .main_section3-interna-div3 .img3 {
+    width: 42%;
   }
 }
 @media (min-width: 650px) {
@@ -534,7 +539,7 @@ footer .footer-div4 p {
     height: 210px;
   }
   main .main_section3 .main_section3-interna .main_section3-interna-div3 .img3 {
-    width: 40%;
+    width: 38%;
   }
   main .main_section4 {
     padding-top: 25px;
@@ -575,8 +580,19 @@ footer .footer-div4 p {
   }
 }
 @media (min-width: 850px) {
+  header .header_div2 {
+    padding-left: 57%;
+  }
+
   main .main_section1 .main_section1-div1, main .main_section1 .main_section1-div2 {
     height: 270px;
+  }
+
+  main .main_section2 .main_section2-div1 .div_interno1 {
+    padding-left: 70px;
+  }
+  main .main_section2 .div_interno3 {
+    padding-left: 70px;
   }
 }
 @media (min-width: 950px) {
@@ -587,6 +603,88 @@ footer .footer-div4 p {
 
   main .main_section1 .main_section1-div1, main .main_section1 .main_section1-div2 {
     height: 300px;
+  }
+
+  main .main_section2 {
+    margin-top: 30px;
+  }
+  main .main_section2 .main_section2-div1 {
+    max-width: 1000px;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+    -ms-grid-rows: 40% 10%;
+    grid-template-rows: 40% 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .main_section2 .main_section2-div1 > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  main .main_section2 .main_section2-div1 > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  main .main_section2 .main_section2-div1 > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  main .main_section2 .main_section2-div1 > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  main .main_section2 .main_section2-div1 .div_interno1 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  main .main_section2 .main_section2-div1 .div_interno3 {
+    padding-top: 150px;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  main .main_section4 {
+    background-color: #c3e3e8;
+    background-image: url(../assets/iconos/audifonos.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 25%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 75px;
+    padding-top: 55px;
+    padding-bottom: 65px;
+  }
+  main .main_section4 .main_section4-div1 {
+    padding-left: 2%;
+    width: 50%;
+  }
+  main .main_section4 .main_section4-div2 {
+    padding-bottom: 10px;
+  }
+  main .main_section6 {
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+    max-width: 1250px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 1050px) {
@@ -602,6 +700,24 @@ footer .footer-div4 p {
 
   main .main_section1 .main_section1-div1, main .main_section1 .main_section1-div2 {
     height: 330px;
+  }
+
+  footer .footer-div1 h2 {
+    font-size: 2.3rem;
+  }
+  footer .footer-div1 #addres {
+    width: 450px;
+  }
+  footer .footer-div1 #suscribe {
+    width: 110px;
+    padding: 12px;
+    font-size: 1.3rem;
+  }
+  footer .footer-div3 {
+    font-size: 2rem;
+  }
+  footer .footer-div4 img {
+    width: 45%;
   }
 }
 @media (min-width: 1150px) {
@@ -627,31 +743,5 @@ footer .footer-div4 p {
 @media (min-width: 1450px) {
   main .main_section1 .main_section1-div1, main .main_section1 .main_section1-div2 {
     height: 430px;
-  }
-}
-@media (min-width: 980px) {
-  main .main_section2 .main_section2-div1 {
-    display: -ms-inline-grid;
-    display: inline-grid;
-    -ms-grid-columns: 35% 35%;
-    grid-template-columns: 35% 35%;
-    -ms-grid-rows: 50% 50%;
-    grid-template-rows: 50% 50%;
-  }
-  main .main_section2 .main_section2-div1 > *:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  main .main_section2 .main_section2-div1 > *:nth-child(2) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-  main .main_section2 .main_section2-div1 > *:nth-child(3) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
-  main .main_section2 .main_section2-div1 > *:nth-child(4) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
   }
 }
