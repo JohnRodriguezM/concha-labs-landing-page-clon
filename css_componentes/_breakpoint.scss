@@ -211,6 +211,30 @@
         }
     }
 }
+/*en este media querie aparece la barra de navegación y desaparece el logo*/
+@media(min-width:900px){
+    header{
+        .header_div2{
+            padding: 10px;
+            padding-left:12%;
+            img{
+                display:none;
+            }
+            nav{
+                display:block;
+                ul{
+                    li{
+                        display:inline-block;
+                        margin-left:20px;
+                        margin-right: 20px;
+                        font-size:1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+/********************************/
 @media(min-width:950px){
     header{
         padding-top: 15px;

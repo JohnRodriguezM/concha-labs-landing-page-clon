@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* inicio globales */
 /*border input*/
 /*color parte de los testimonios*/
@@ -58,6 +59,9 @@ header .header_div2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+header .header_div2 nav {
+  display: none;
 }
 header .header_div2 img {
   width: 22px;
@@ -597,6 +601,26 @@ footer .footer-div4 p {
     padding-left: 70px;
   }
 }
+/*en este media querie aparece la barra de navegación y desaparece el logo*/
+@media (min-width: 900px) {
+  header .header_div2 {
+    padding: 10px;
+    padding-left: 12%;
+  }
+  header .header_div2 img {
+    display: none;
+  }
+  header .header_div2 nav {
+    display: block;
+  }
+  header .header_div2 nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.5rem;
+  }
+}
+/********************************/
 @media (min-width: 950px) {
   header {
     padding-top: 15px;
