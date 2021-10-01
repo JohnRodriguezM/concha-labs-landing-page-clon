@@ -206,3 +206,185 @@
     <script src="./js/animaciones.js"></script>
 </body>
 </html>
+
+<!--
+
+------ARCHIVO HTML EN PLANTILLA PUG-----
+
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='./css/styles.css')
+    script(src='./js/scrollreveal.js')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;1,200&display=swap' rel='stylesheet')
+    link(rel='icon' href='./assets/iconos/favicon.png' type='image/x-icon')
+    title Home Page - Concha Labs
+  body
+    header
+      .header_div1
+        img.logo_concha(src='./assets/iconos/logo-concha.svg' alt='logo de la empresa')
+        img.nombre_concha(src='./assets/iconos/nombre-concha.svg' alt='nombre de la empresa')
+      .header_div2
+        img(src='./assets/iconos/home.svg' alt='barra de navegación')
+    main
+      section.main_section1
+        .main_section1-div1
+          .contenedor--h2
+            h2.Hear_clear-h2
+              | Hear Clearly. Live freely.
+        .main_section1-div2
+          .contenedor--h2-2
+            h2.customize_h2
+              | Customize how you hear, right from your phone
+      section.main_section2
+        .main_section2-div1
+          .div_interno1
+            h2
+              | OUR MISSION
+            h3
+              | Helping you hear more clearly
+          .div_interno2
+            img(src='./assets/imagenes/imagen1.png' alt='')
+          .div_interno3
+            p.main_section2-div1-p1
+              b
+                | We believe that everyone deserves the right to enjoy the richness in conversations and sounds at a fair price.
+            p.main_section2-div1-p2
+              | This has been our guiding principle from day one, and we strive to uphold it in everything we do. We built Concha Labs bassed on user interviews and feedback from people like you, and we're excited to continue on this journey with you, for you.
+      section.main_section3
+        h2 How it works
+        section.main_section3-interna
+          .main_section3-interna-div1
+            img(src='./assets/iconos/step-1.png' alt='')
+            h3
+              | Step 1
+            p
+              b Hear
+              |  how clear conversations would sound, in just three minutes, using your smartphone & earbuds.
+          .main_section3-interna-div2
+            img(src='./assets/iconos/step-2.png' alt='')
+            h3
+              | Step 2
+            p
+              b Receive
+              |  your personalixed hearing pods, shipped directly to your door.
+          .main_section3-interna-div3
+            img.img3(src='./assets/iconos/step-3.png' alt='')
+            h3
+              | Step 3
+            p
+              b Continue
+              |  to optimize your hearing for any situation: meetings, family time, or a video call with friends.
+        button
+          a(href='')
+            | TRY OUR SOUNDSCOPE
+            span    TM
+            |  TECHNOLOGY
+      section.main_section4
+        .main_section4-div1
+          p
+            | BETA PROGRAM
+          h2
+            | Sign up to join Beta
+          p.section_4-div1-p
+            | It's important for us to receive feedback and input from users like you to ensure we're building an amazing solution. If selected, you will receive pair of our premium hearing pods at steep discount.
+        .main_section4-div2
+          form(action='')
+            label(for='')
+              input#nombre(type='text' name='' placeholder='First name*')
+            label(for='')
+              input#correo(type='text' name='' placeholder='Email*')
+            label(for='')
+              input#envio(type='submit' name='' value='SUBMIT')
+        //
+          --
+          <div>
+          <input type="text" name="" id="">
+          </div>
+          <div>
+          <input type="text" name="" id="">
+          </div>
+          <div>
+          <input type="submit" name = "" id = "">
+          </div>
+      section.main_section5
+        p
+          | TESTIMONIALS
+        h2
+          | What are people saying about Concha Labs?
+      section.main_section6
+        .main_section6-div1
+          img#persona1(src='./assets/imagenes/persona1.png' alt='')
+          p
+            img#com_blanca(src='./assets/iconos/quotes-white.png' alt='')
+            br
+            br
+            |                     It's confusing for people to navigate hearing solutions. Traditional solutions are expensive and time consumming, and many online options are of poor quality. 
+            b
+              | Concha Labs has a novel, high-quality, refreshing approach that is able to arrive at individual user's hearing preferences and be direct to consumers.
+            |  It's really hard to do both, and I'm impressed with their approach.
+          h2
+            b DR. AUSTIN SWANSON, AuD
+          p#parrafo_padding
+            | Lead Adult Audiologist, Stanford
+        .main_section6-div2
+          img#persona2(src='./assets/imagenes/persona2.png' alt='')
+          p
+            img#com_rojas(src='./assets/iconos/quotes-red.png' alt='')
+            br
+            br
+            |                     A few years ago I developed hearing loss and struggled greatly with the hearing aids I used. I was told my hearing loss does not fit the profile for standard amplification and the benefit of hearing aids could only be marginal. 
+            b
+              | I just tried your sound profiler. It’s awesome how in the yellow I can hear every word loud and clear.
+            |  The background noise seems separate from the spoken word and does not interfere with hearing what is said.
+          h2
+            | RIKE
+          p User
+    footer
+      .footer-div1
+        h2
+          | Suscribe to out newsletter
+        input#addres(type='text' name='' placeholder='Email addres*')
+        input#suscribe(type='button' value='SUBSCRIBE')
+      .footer-div2
+        ul
+          li
+            span
+              a(href='#')
+                img(src='./assets/iconos/Facebook.png' alt='')
+          li
+            span
+              a(href='#')
+                img(src='./assets/iconos/instagram.png' alt='')
+          li
+            span
+              a(href='#')
+                img(src='./assets/iconos/twitter.png' alt='')
+          li
+            span
+              a(href='#')
+                img(src='./assets/iconos/medium.png' alt='')
+      .footer-div3
+        ul
+          li
+            a(href='') Contact Us
+          li
+            a(href='') Terms of use
+          li
+            a(href='')  Careers
+          li
+            a(href='') Privacy
+      .footer-div4
+        img#rotate(src='./assets/iconos/logo-bottom.png' alt='')
+        p
+          b © 2021 Concha Inc.
+        p
+          | Concha Lab's products are not medical devices. They are not intented to diagnose, treat, cure, or prevent any disease or health condition.
+    script(src='./js/animaciones.js')
+-->

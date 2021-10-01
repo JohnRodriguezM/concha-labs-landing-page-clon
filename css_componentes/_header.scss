@@ -1,0 +1,28 @@
+header{
+    display: grid;
+    grid-template-columns: auto auto;
+    width:100%;
+    position: fixed;
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    z-index: 2;
+    .header_div1{
+        display:inline-flex;
+        padding-left: 15px;
+        .logo_concha{
+            margin-right: 15px;
+        }
+        .nombre_concha{
+            width:150px;
+        }
+    }
+    .header_div2{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width:22px;
+        }
+    }
+}

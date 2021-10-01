@@ -1,0 +1,24 @@
+$color-alternativo:#f9d353;
+$color1:#c3e3e8;
+$color-borde:#4b6686; /*border input*/
+$color-testimonio1:#f89c7f; /*color parte de los testimonios*/
+$color-testimonio2:#faf3ec;/*color segundo testimonio*/
+$fuente-principal:'Nunito Sans', sans-serif;
+$fuente-secundaria:Georgia, 'Times New Roman', Times, serif;
+$color-h2:#E09900;
+/*text-shadow: 0 1px 3px rgb(0 0 0 / 30%) al h2 del banner;
+
+*/
+*{
+    border:0;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: $fuente-principal;
+}
+html{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+}
