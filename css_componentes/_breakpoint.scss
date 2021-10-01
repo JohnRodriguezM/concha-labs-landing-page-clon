@@ -262,6 +262,7 @@
         .main_section6{
             grid-template-columns: 50% 50%;
             max-width:1250px;
+            gap:30px;
             justify-content: center;
             margin-left: auto;
             margin-right: auto;
@@ -292,12 +293,21 @@
         height:330px;
     }
     footer{
+        display: grid;
+        grid-template-columns: 35% 15% 35% 15%;
+        align-items: center;
+        margin-top:140px;
+        padding-top:10px;
+        border-top: 1px solid #E3E6E8;
         .footer-div1{
+            order:3;
+            padding-top:0;
             h2{
+                padding-top:0;
                 font-size:2.3rem;
             }
             #addres{
-                width:450px;
+                width:200px;
             }
             #suscribe{
                 width:110px;
@@ -306,10 +316,31 @@
 
             }
         }
+        .footer-div2{
+            order:4;
+            padding-top:0;
+            
+            ul{
+                display: flex;
+                flex-direction: column;
+                
+                li{
+                    padding:6px;
+                   a{
+                    color:black;
+                   }
+                }
+            }
+        }
         .footer-div3{
+            order:2;
             font-size:2rem;
         }
         .footer-div4{
+            text-align:left;
+            padding-left: 9%;
+            order:1;
+            padding-top: 0;
             img{
                 width: 45%;
             }
