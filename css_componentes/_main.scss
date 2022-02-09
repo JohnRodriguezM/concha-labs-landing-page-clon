@@ -53,11 +53,12 @@ main{
     .main_section2{
         max-width:1200px;
         margin-left: auto;
-        margin: auto;
+        margin-right: auto;
         padding-top:35%;
         .main_section2-div1{
             display: grid;
             grid-template-rows: auto auto;
+            margin: auto;
             text-align: center;
             h2{
                 padding-top:30px;
@@ -78,6 +79,7 @@ main{
                 color: #333;
             }
             img{
+                margin-left: 10px;
                 width: 85%;
                 max-width:550px;
             }
@@ -112,6 +114,7 @@ main{
                 width: 51%;
                 max-width:400px;
                 img{
+                    margin: auto;
                     width:85%;
                     max-width: 200px;
                 }
@@ -283,4 +286,50 @@ main{
             }
         }
     }
+}
+
+
+/// pendiente -- va bien
+#ul-container {
+    margin-top:10px;
+    list-style: none;
+    background-color:#fff;
+    text-align: center;
+}
+
+.li-nav{
+    font-size:17px;
+    font-family:Georgia, "Times New Roman", Times, serif;
+    color: #333;
+   animation-duration: 1.3s;
+   animation-name: sliden;
+}
+
+
+
+
+@keyframes sliden {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+// para un uso de toggle
+.visible{
+    display:block;
+}
+.invisible{
+    display:none;
+}
+
+
+// se deshabilita el ul para el main
+@media (min-width:900px){
+    #ul-container {display:none;}
 }

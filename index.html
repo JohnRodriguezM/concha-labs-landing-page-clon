@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./node_modules/hamburgers/dist/hamburgers.min.css">
     <script src="./js/scrollreveal.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;1,200&display=swap" rel="stylesheet">
@@ -19,20 +21,36 @@
             <img class = "nombre_concha" src="./assets/iconos/nombre-concha.svg" alt="nombre de la empresa">
         </div>
         <div class = "header_div2">
-            <img src="./assets/iconos/home.svg" alt="barra de navegación">
+          <button id = "btn-hamburger" class="hamburger hamburger--emphatic" type="button">
+            
+            <span class="hamburger-box">
+              <span class="hamburger-inner">
+                <a href="ul-container"></a>
+              </span>
+            </span>
+          </button>
             <!-- elemento que aparecen luego de 900px (barra de navegación)-->
-            <nav>
-              <ul>
-                <li>Why concha?</li>
-                <li>About us</li>
-                <li>Get started</li>
-                <li>Shop</li>
-              </ul>
-            </nav>
+            <nav >
+            <ul id = "ul-containerMayor">
+              <li class = "li-navi">Why concha?</li>
+              <li class = "li-navi">About us</li>
+              <li class = "li-navi">Get Started</li>
+              <li class="li-navi">Shop</li>
+          </ul>
+          </nav>
         </div>
-    </header>
-    <main>
-        <section class = "main_section1">
+        <nav >
+          <ul id = "ul-container" class = "invisible">
+            <li class = "li-nav">Why concha?</li>
+            <li class = "li-nav">About us</li>
+            <li class = "li-nav">Get Started</li>
+            <li class="li-nav">Shop</li>
+        </ul>
+        </nav>
+        </header>
+        <main>
+         
+          <section class = "main_section1">
             <div class = "main_section1-div1">
               <div class = "contenedor--h2">
                 <h2 class = "Hear_clear-h2">
@@ -119,7 +137,7 @@
                 </p>
             </div>
             <div class = "main_section4-div2">
-                <form action="">
+                <form action="" id = "formInfo">
                     <label for="">
                         <input type="text" name="" id="nombre" placeholder="First name*">
                     </label>
@@ -213,6 +231,10 @@
             </div>
     </footer>
     <script src="./js/animaciones.js"></script>
+    <script src="./js/toggleNavBar.js"></script>
+    <script src="./js/añadirNav.js"></script>
+    <script type = "module" src="./js/conexionFirebase/index.mjs"></script>
+    <script type = "module" src="./js/conexionFirebase/datosconfig.mjs"></script>
 </body>
 </html>
 
