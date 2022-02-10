@@ -18,20 +18,49 @@ console.log(firebaseConfig);
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app)
 
+
+/* class NombreUser {
+    constructor(user){
+        this.user = user;
+        this.validar(user);
+    }
+    validar(user){
+        if(!user){
+            return console.log("no hay uso del campo de usuario")
+        }
+    }
+}
+
+
+let persona = new NombreUser("") */
+
+
+/* function validar(usuario,email) {
+    if(!usuario){ return console.error("no hay usuario")}
+    if(!email){ return console.error("no hay email")}
+} */
+
 function envioLogin (e) {
     e.preventDefault(e);
         const envioDatos = async() => {
             try {
             const docRef = await addDoc(collection(db, "usuarios"),{
-                user: document.getElementById('nombre').value,
-                telefono : document.getElementById('correo').value,
+                nombre: document.getElementById('nombre').value,
+                /* nombre: new NombreUser(document.getElementById('nombre').value), */
+                correo: document.getElementById('correo').value,
+            
             });
             console.log("Document written with ID: ",docRef.id);
             } catch (e) {
             console.error("Error adding document: ", e);
             }
         }
-        envioDatos();
+        if(envioDatos){
+            envioDatos()
+        }
+        else{
+            return false
+        }
         alert("Tus datos han sido enviados")
         document.getElementById('formInfo').reset()
 }
@@ -42,3 +71,4 @@ const envio1 = document.getElementById('formInfo').addEventListener("submit",env
 } */
 
 export {firebaseConfig}
+

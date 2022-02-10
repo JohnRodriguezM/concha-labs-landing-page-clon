@@ -43,6 +43,9 @@ header {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #fff;
+  top: 0;
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
   z-index: 2;
 }
 header .header_div1 {
@@ -88,8 +91,8 @@ header nav .li-nav {
   font-size: 17px;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #333;
-  -webkit-animation-duration: 1.3s;
-          animation-duration: 1.3s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-name: sliden;
           animation-name: sliden;
 }

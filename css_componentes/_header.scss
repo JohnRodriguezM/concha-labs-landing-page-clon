@@ -6,6 +6,8 @@ header{
     padding-top:10px;
     padding-bottom: 10px;
     background-color: #fff;
+    top: 0;
+    transition: top .5s;
     z-index: 2;
     .header_div1{
         display:inline-flex;
@@ -38,7 +40,7 @@ header{
             font-size:17px;
             font-family:Georgia, "Times New Roman", Times, serif;
             color: #333;
-           animation-duration: 1.3s;
+           animation-duration: 2s;
            animation-name: sliden;
         }
         
