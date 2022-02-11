@@ -26,9 +26,10 @@ a{
 
 
 .active{
-    display: block;
+    visibility:visible;
 }
 
 .hidden{
-    display: none;
+    visibility: hidden;
 }
+
