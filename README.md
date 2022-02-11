@@ -13,5 +13,7 @@ code written by John Jairo Rodriguez Medina
 love you people
 
 
+hambuger css is failing, the conection with the library isn't the better, sorry.
+
 
 ## pendiente de conexion con firebase --- ready...
