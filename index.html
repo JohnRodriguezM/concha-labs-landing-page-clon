@@ -140,10 +140,10 @@
             <div class = "main_section4-div2">
                 <form action="" id = "formInfo">
                     <label for="">
-                        <input type="text" name="" id="nombre" placeholder="First name*">
+                        <input type="text" name="" id="nombre" placeholder="First name*" required>
                     </label>
                     <label for="">
-                        <input type="text" name="" id="correo" placeholder = "Email*">
+                        <input type="text" name="" id="correo" placeholder = "Email*" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"  required >
                     </label>
                     <label for="">
                         <input type="submit" name = "" id = "envio" value = "SUBMIT">
@@ -235,6 +235,7 @@
     <script src="./js/toggleNavBar.js"></script>
     <script src="./js/añadirNav.js"></script>
     <script src="./js/scrollHidden.js"></script>
+    <script type = "module" src="./js/modalAlert.mjs"></script>
     <script type = "module" src="./js/conexionFirebase/index.mjs"></script>
     <script type = "module" src="./js/conexionFirebase/datosconfig.mjs"></script>
 </body>
