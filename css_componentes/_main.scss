@@ -42,12 +42,16 @@ main{
                 padding-top:15px;
                 padding-bottom: 15px;
             }
-            .main_section1-div2:hover{
+            .main_section1-div1:hover{
                 opacity: 0;
+                animation-name: opacidadMayor;
+                animation-duration:3s;
             }
         }
         .main_section1-div2:hover,.main_section1-div2:active{
             opacity: 1;
+            animation-name: opacidadMayor;
+                animation-duration:3s;
         }
     }
     .main_section2{
@@ -328,6 +332,14 @@ main{
     display:none;
 }
 
+@keyframes opacidadMayor {
+    from{opacity: 0;}
+    to { opacity : 1; }
+}
+@keyframes opacidadMenor {
+    from{opacity: 1;}
+    to { opacity : 0; }
+}
 
 // se deshabilita el ul para el main
 @media (min-width:900px){

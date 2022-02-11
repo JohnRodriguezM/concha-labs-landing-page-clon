@@ -1,3 +1,12 @@
+button:active{
+    transform: scale(.88);
+}
+input:active{
+    transform:scale(.98);
+    transform : transform 2s;
+}
+
+
 header{
     display: grid;
     grid-template-columns: auto auto;
@@ -43,7 +52,10 @@ header{
            animation-duration: 2s;
            animation-name: sliden;
         }
-        
+        .li-nav:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
     }
     
 }

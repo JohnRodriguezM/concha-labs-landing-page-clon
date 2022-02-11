@@ -33,6 +33,18 @@ a {
 
 /**/
 /*inicio header */
+button:active {
+  -webkit-transform: scale(0.88);
+          transform: scale(0.88);
+}
+
+input:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-transform: transform 2s;
+          transform: transform 2s;
+}
+
 header {
   display: -ms-grid;
   display: grid;
@@ -95,6 +107,11 @@ header nav .li-nav {
           animation-duration: 2s;
   -webkit-animation-name: sliden;
           animation-name: sliden;
+}
+header nav .li-nav:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
 }
 
 @media (min-width: 900px) {
@@ -208,11 +225,19 @@ main .main_section1 .main_section1-div2 .contenedor--h2-2 {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-main .main_section1 .main_section1-div2 .main_section1-div2:hover {
+main .main_section1 .main_section1-div2 .main_section1-div1:hover {
   opacity: 0;
+  -webkit-animation-name: opacidadMayor;
+          animation-name: opacidadMayor;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 main .main_section1 .main_section1-div2:hover, main .main_section1 .main_section1-div2:active {
   opacity: 1;
+  -webkit-animation-name: opacidadMayor;
+          animation-name: opacidadMayor;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 main .main_section2 {
   max-width: 1200px;
@@ -521,6 +546,39 @@ main .main_section6 .main_section6-div2 #persona2 {
   display: none;
 }
 
+@-webkit-keyframes opacidadMayor {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacidadMayor {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes opacidadMenor {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes opacidadMenor {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @media (min-width: 900px) {
   #ul-container {
     display: none;
@@ -590,7 +648,7 @@ footer .footer-div4 img {
   margin: auto;
 }
 footer .footer-div4 p {
-  width: 90%;
+  width: 60%;
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 15px;
@@ -983,7 +1041,7 @@ footer .footer-div4 p {
   top: 25%;
   z-index: 15;
   padding: 1rem;
-  opacity: 0.8;
+  opacity: 0.9;
   background-color: #f9d353;
   border-radius: 25px;
   border: 1px solid black;
