@@ -20,3 +20,15 @@ $btnNavBar.addEventListener('click', e => {
     $footer.classList.toggle('hidden')
     $footer.classList.toggle('active')
 })
+
+
+
+/* let pares = 0;
+let impares = 0;
+for(let i = 0; i < 10; i++){
+    if(i % 2 === 0){
+        console.log(`suma de pares ${pares += i}`)
+    }else(
+        console.log(`soy un numero impar ${impares += i}`)
+    )
+} */
