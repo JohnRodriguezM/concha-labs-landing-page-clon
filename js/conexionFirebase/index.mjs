@@ -1,8 +1,8 @@
 /* import {respaldo} from './datosconfig.mjs' */
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
 
-import {getFirestore,collection,addDoc} from "https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore.js";
+import {getFirestore,collection,addDoc} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
 
 import { aparecerModal } from "../modalAlert.mjs";
 
