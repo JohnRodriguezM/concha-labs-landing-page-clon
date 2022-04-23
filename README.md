@@ -8,7 +8,7 @@ this one have a firebase implementacion with a firestore database
 
 is simple but is powerful
 
-code written by John Jairo Rodriguez Medina 
+code written by John Jairo Rodriguez Medina
 
 love you people
 
