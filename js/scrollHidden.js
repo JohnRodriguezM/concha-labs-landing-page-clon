@@ -16,6 +16,9 @@ window.addEventListener('scroll', () => {
         $header.style.top = '0'
     }
     // el else es true, por ende el "header se esconde 100px, cuando hago scroll"
+    else {
+        $header.style.top = '-200px'
+    }
     // luego se retorna el valor de ubicacion y se iguala al de desplazamiento
 
 
