@@ -1,10 +1,6 @@
 const $main = document.querySelector('main');
-console.log($main)
 const $footer = document.querySelector('footer');
-
-const $btnNavBar = document.getElementById('btn-hamburger'); 
-console.log($btnNavBar)
-
+const $btnNavBar = document.getElementById('btn-hamburger');
 const $container = document.getElementById('ul-container');
 
 $btnNavBar.addEventListener('click',()=>{
@@ -20,15 +16,3 @@ $btnNavBar.addEventListener('click', e => {
     $footer.classList.toggle('hidden')
     $footer.classList.toggle('active')
 })
-
-
-
-/* let pares = 0;
-let impares = 0;
-for(let i = 0; i < 10; i++){
-    if(i % 2 === 0){
-        console.log(`suma de pares ${pares += i}`)
-    }else(
-        console.log(`soy un numero impar ${impares += i}`)
-    )
-} */

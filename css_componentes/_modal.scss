@@ -1,5 +1,5 @@
 .modal{
-    
+    color: white;
     text-align: center;
     display: none;
     position: fixed;
@@ -13,12 +13,10 @@
     top:25%;
     z-index: 15;
     padding: 1rem;
-    opacity: .9;
-    background-color:#f9d353;
+    background-color:#1b1b32;
     border-radius: 25px;
-    border: 1px solid black;
-    /* border:2px solid rgba(52,152,219,.45);
-    box-shadow: 0 0 700px 700px rgba(52,152,219,0.25) */
+    border: 2px solid #fff;
+    transition: all 0.5s ease-in-out;
 }
 .modalInterno{
     display:grid;

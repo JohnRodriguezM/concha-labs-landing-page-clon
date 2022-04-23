@@ -88,6 +88,8 @@ header .header_div2 button {
 }
 header #ul-containerMayor {
   display: none;
+  -webkit-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
 }
 header nav {
   -ms-grid-column: 1;
@@ -169,12 +171,14 @@ header nav .li-nav:hover {
 }
 .visible {
   display: block;
+  -webkit-transition: all 5s ease;
+  transition: all 5s ease;
 }
 
 .invisible {
   display: none;
-  -webkit-transition: display 5s;
-  transition: display 5s;
+  -webkit-transition: all 5s ease;
+  transition: all 5s ease;
 }
 
 /**/
@@ -219,6 +223,8 @@ main .main_section1 .main_section1-div2 {
   width: 100%;
   height: 100px;
   opacity: 0;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 main .main_section1 .main_section1-div2 .contenedor--h2-2 {
   width: 40%;
@@ -230,22 +236,14 @@ main .main_section1 .main_section1-div2 .contenedor--h2-2 {
 }
 main .main_section1 .main_section1-div2 .main_section1-div1:hover {
   opacity: 0;
-  -webkit-animation-name: opacidadMayor;
-          animation-name: opacidadMayor;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
 }
-main .main_section1 .main_section1-div2:hover, main .main_section1 .main_section1-div2:active {
+main .main_section1 .main_section1-div2:hover,
+main .main_section1 .main_section1-div2:active {
   opacity: 1;
-  -webkit-animation-name: opacidadMayor;
-          animation-name: opacidadMayor;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
 }
 main .main_section2 {
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-top: 35%;
 }
 main .main_section2 .main_section2-div1 {
@@ -253,7 +251,7 @@ main .main_section2 .main_section2-div1 {
   display: grid;
   -ms-grid-rows: auto auto;
   grid-template-rows: auto auto;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
 }
 main .main_section2 .main_section2-div1 h2 {
@@ -275,11 +273,12 @@ main .main_section2 .main_section2-div1 h3 {
   color: #333;
 }
 main .main_section2 .main_section2-div1 img {
-  margin-left: 10px;
+  margin: 0 auto;
   width: 85%;
   max-width: 550px;
 }
-main .main_section2 .main_section2-div1 .main_section2-div1-p1, main .main_section2 .main_section2-div1 .main_section2-div1-p2 {
+main .main_section2 .main_section2-div1 .main_section2-div1-p1,
+main .main_section2 .main_section2-div1 .main_section2-div1-p2 {
   width: 85%;
   text-align: left;
   padding-top: 10px;
@@ -311,22 +310,26 @@ main .main_section3 .main_section3-interna {
       -ms-flex-pack: center;
           justify-content: center;
 }
-main .main_section3 .main_section3-interna .main_section3-interna-div1, main .main_section3 .main_section3-interna .main_section3-interna-div2, main .main_section3 .main_section3-interna .main_section3-interna-div3 {
+main .main_section3 .main_section3-interna .main_section3-interna-div1, main .main_section3 .main_section3-interna .main_section3-interna-div2,
+main .main_section3 .main_section3-interna .main_section3-interna-div3 {
   width: 51%;
   max-width: 400px;
 }
-main .main_section3 .main_section3-interna .main_section3-interna-div1 img, main .main_section3 .main_section3-interna .main_section3-interna-div2 img, main .main_section3 .main_section3-interna .main_section3-interna-div3 img {
+main .main_section3 .main_section3-interna .main_section3-interna-div1 img, main .main_section3 .main_section3-interna .main_section3-interna-div2 img,
+main .main_section3 .main_section3-interna .main_section3-interna-div3 img {
   margin: auto;
   width: 85%;
   max-width: 200px;
 }
-main .main_section3 .main_section3-interna .main_section3-interna-div1 h3, main .main_section3 .main_section3-interna .main_section3-interna-div2 h3, main .main_section3 .main_section3-interna .main_section3-interna-div3 h3 {
+main .main_section3 .main_section3-interna .main_section3-interna-div1 h3, main .main_section3 .main_section3-interna .main_section3-interna-div2 h3,
+main .main_section3 .main_section3-interna .main_section3-interna-div3 h3 {
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 2.4rem;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-main .main_section3 .main_section3-interna .main_section3-interna-div1 p, main .main_section3 .main_section3-interna .main_section3-interna-div2 p, main .main_section3 .main_section3-interna .main_section3-interna-div3 p {
+main .main_section3 .main_section3-interna .main_section3-interna-div1 p, main .main_section3 .main_section3-interna .main_section3-interna-div2 p,
+main .main_section3 .main_section3-interna .main_section3-interna-div3 p {
   padding-bottom: 40px;
   font-size: 1.6rem;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -400,7 +403,8 @@ main .main_section4 .main_section4-div2 form label input {
   background: transparent;
   outline: none;
 }
-main .main_section4 .main_section4-div2 form label #nombre, main .main_section4 .main_section4-div2 form label #correo {
+main .main_section4 .main_section4-div2 form label #nombre,
+main .main_section4 .main_section4-div2 form label #correo {
   width: 250px;
   margin-bottom: 50px;
   padding-bottom: 10px;
@@ -430,7 +434,8 @@ main .main_section4 .main_section4-div2 form label #nombre::-ms-input-placeholde
   font-size: 1.45rem;
   font-weight: 400;
 }
-main .main_section4 .main_section4-div2 form label #nombre::placeholder, main .main_section4 .main_section4-div2 form label #correo::placeholder {
+main .main_section4 .main_section4-div2 form label #nombre::placeholder,
+main .main_section4 .main_section4-div2 form label #correo::placeholder {
   padding-left: 4px;
   color: #4b6686;
   font-size: 1.45rem;
@@ -549,39 +554,6 @@ main .main_section6 .main_section6-div2 #persona2 {
   display: none;
 }
 
-@-webkit-keyframes opacidadMayor {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes opacidadMayor {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes opacidadMenor {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-@keyframes opacidadMenor {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 @media (min-width: 900px) {
   #ul-container {
     display: none;
@@ -786,7 +758,8 @@ footer .footer-div4 p {
   main .main_section3 h2 {
     padding-bottom: 75px;
   }
-  main .main_section3 .main_section3-interna .main_section3-interna-div1 p, main .main_section3 .main_section3-interna .main_section3-interna-div2 p, main .main_section3 .main_section3-interna .main_section3-interna-div3 p {
+  main .main_section3 .main_section3-interna .main_section3-interna-div1 p, main .main_section3 .main_section3-interna .main_section3-interna-div2 p,
+main .main_section3 .main_section3-interna .main_section3-interna-div3 p {
     width: 90%;
     margin: auto;
   }
@@ -1029,8 +1002,9 @@ footer .footer-div4 p {
     height: 430px;
   }
 }
-/**/
+/*diseño del modal que se despliega al envío del formulario*/
 .modal {
+  color: white;
   text-align: center;
   display: none;
   position: fixed;
@@ -1044,12 +1018,11 @@ footer .footer-div4 p {
   top: 25%;
   z-index: 15;
   padding: 1rem;
-  opacity: 0.9;
-  background-color: #f9d353;
+  background-color: #1b1b32;
   border-radius: 25px;
-  border: 1px solid black;
-  /* border:2px solid rgba(52,152,219,.45);
-  box-shadow: 0 0 700px 700px rgba(52,152,219,0.25) */
+  border: 2px solid #fff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .modalInterno {
